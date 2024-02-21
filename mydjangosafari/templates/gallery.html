@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+<a href="{% url 'my_homepage' %}">Home</a>
+<a href="{% url 'my_about' %}">About Us</a>
+<a href="{% url 'my_contact' %}">Contact Us</a>
+<a href="{% url 'my_gallery' %}">Gallery</a>
+<a href="{% url 'my_services' %}">Services</a>
+<h2>Our Gallery</h2>
+<img src="{% static 'img/django1.jpg' %}" alt="">
+<img src="{% static 'img/django2.jpg' %}" alt="">
+<img src="{% static 'img/django3.jpg' %}" alt="">
+<img src="{% static 'img/django4.jpg' %}" alt="">
+<img src="{% static 'img/django5.jpg' %}" alt="">
+<img src="{% static 'img/django6.jpg' %}" alt="">
+</body>
+</html>
